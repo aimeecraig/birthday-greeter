@@ -1,9 +1,10 @@
 require 'sinatra'
 
 get '/' do
-  erb(:index)
+  erb :index
 end
 
 get '/result' do
-  erb(:result)
+  @name = params[:name]
+  erb :result
 end
