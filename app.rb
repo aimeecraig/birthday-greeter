@@ -4,7 +4,7 @@ get '/' do
   erb :index
 end
 
-get '/result' do
+post '/result' do
   @name = params[:name]
   erb :result
 end
