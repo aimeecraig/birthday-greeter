@@ -2,7 +2,10 @@
 <head>
 <style>
 
-body {background-color: lightcoral;}
+body {
+  background-color: lightcoral;
+  font-family: Verdana, sans-serif;
+}
 
 </style>
 </head>
@@ -14,7 +17,7 @@ body {background-color: lightcoral;}
   </div>
   <% else %>
   <div align=center>
-    <h1>Your birthday will be in 4 days, <%= @name %>!</h1>
+    <h1>It is not your birthday yet, <%= @name %>!</h1>
   </div>
   <% end %>
 
