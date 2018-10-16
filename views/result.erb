@@ -8,7 +8,7 @@ body {background-color: lightcoral;}
 </head>
 <body>
 
-  <% if @day == @time.day && @month == @time.month %>
+  <% if @day == @time.day && @month == @time.strftime("%B") %>
   <div align=center>
     <h1>Happy Birthday, <%= @name %>!</h1>
   </div>

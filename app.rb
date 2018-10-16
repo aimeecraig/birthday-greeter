@@ -6,7 +6,7 @@ end
 
 post '/result' do
   @name = params[:name]
-  @day = params[:day]
+  @day = params[:day].to_i
   @month = params[:month]
   @time = Time.now
   erb :result
